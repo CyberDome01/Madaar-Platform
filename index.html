@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madaar Platform</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/lang.js"></script>
+<script src="js/router.js"></script>
+</head>
+
+<body>
+
+<div class="topbar">
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('fr')">FR</button>
+<button onclick="setLang('ar')">AR</button>
+</div>
+
+<h1 data-i18n="title">Madaar Operational Intelligence Platform</h1>
+
+<div class="modules">
+<button onclick="openModule('nexus')">Nexus</button>
+<button onclick="openModule('rts')">RTS</button>
+<button onclick="openModule('pms')">PMS</button>
+<button onclick="openModule('fas')">FAS</button>
+<button onclick="openModule('fms')">FMS</button>
+</div>
+
+<div id="workspace"></div>
+
+<script src="js/demo.js"></script>
+</body>
+</html>
